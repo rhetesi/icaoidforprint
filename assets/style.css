@@ -1,0 +1,335 @@
+body {
+
+    font-family: Arial, sans-serif;
+
+    margin: 0;
+
+    padding: 20px;
+
+    background-color: #f5f5f5;
+
+    display: flex;
+
+    justify-content: center;
+
+    min-height: 100vh;
+
+}
+
+.container {
+
+    max-width: 800px;
+
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+}
+
+h1 {
+
+    color: #2c3e50;
+
+    text-align: center;
+
+}
+
+.camera-controls {
+
+    display: flex;
+
+    gap: 10px;
+
+    margin-bottom: 15px;
+
+    width: 100%;
+
+    max-width: 413px;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+}
+
+.camera-select {
+
+    padding: 10px;
+
+    border-radius: 5px;
+
+    border: 1px solid #ddd;
+
+    font-size: 16px;
+
+    flex-grow: 1;
+
+    min-width: 200px;
+
+}
+
+.camera-wrapper {
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+
+    margin: 10px 0;
+
+}
+
+#camera-container {
+
+    position: relative;
+
+    width: 100%;
+
+    max-width: 413px;
+
+    height: 531px;
+
+    overflow: hidden;
+
+    background-color: #eee;
+
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
+}
+
+#video {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transform: scaleX(-1);
+
+}
+
+#canvas {
+
+    display: none;
+
+}
+
+#overlay {
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    pointer-events: none;
+
+}
+
+.controls {
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    margin: 20px 0;
+
+    gap: 10px;
+
+}
+
+.control-btn {
+
+    background-color: #3498db;
+
+    color: white;
+
+    border: none;
+
+    padding: 10px 20px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+    transition: background-color 0.3s;
+
+}
+
+.control-btn.secondary {
+
+    background-color: #7f8c8d;
+
+}
+
+.control-btn:hover {
+
+    background-color: #2980b9;
+
+}
+
+.control-btn.secondary:hover {
+
+    background-color: #6c7a7d;
+
+}
+
+#requirements {
+
+    text-align: left;
+
+    margin: 20px 0;
+
+    padding: 15px;
+
+    background-color: #f8f9fa;
+
+    border-radius: 5px;
+
+    width: 100%;
+
+    max-width: 600px;
+
+}
+
+#result {
+
+    margin-top: 20px;
+
+    text-align: center;
+
+    width: 100%;
+
+}
+
+#download-btn {
+
+    display: none;
+
+    background-color: #27ae60;
+
+}
+
+#download-btn:hover {
+
+    background-color: #219653;
+
+}
+
+/* CEWE gombok stílusa */
+
+.cewe-container {
+
+    margin-top: 20px;
+
+    padding: 15px;
+
+    background-color: #f0f8ff;
+
+    border-radius: 5px;
+
+    width: 100%;
+
+}
+
+.cewe-container h4 {
+
+    margin-top: 0;
+
+    color: #2c3e50;
+
+}
+
+.cewe-btn {
+
+    background-color: #8e44ad !important;
+
+    margin: 5px !important;
+
+    display: block;
+
+    width: 100%;
+
+    max-width: 300px;
+
+    margin-left: auto !important;
+
+    margin-right: auto !important;
+
+}
+
+.cewe-btn:hover {
+
+    background-color: #7d3c98 !important;
+
+}
+
+@media (max-width: 600px) {
+
+    #camera-container {
+
+        height: calc(100vw * 1.285);
+
+    }
+
+    
+
+    .container {
+
+        padding: 10px;
+
+    }
+
+    
+
+    #requirements {
+
+        margin: 15px 0;
+
+        padding: 10px;
+
+    }
+
+    
+
+    .camera-controls {
+
+        flex-direction: column;
+
+        align-items: center;
+
+    }
+
+    
+
+    .camera-select {
+
+        width: 100%;
+
+    }
+
+    
+
+    .cewe-btn {
+
+        padding: 8px 15px;
+
+        font-size: 14px;
+
+    }
+
+}
